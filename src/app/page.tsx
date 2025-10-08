@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Greet } from "./components/greet";
+import { Counter } from "./components/counter";
 
 export default function Home() {
   return (
@@ -12,6 +14,11 @@ export default function Home() {
           height={38}
           priority
         />
+        <Greet /> 
+        <Counter/>
+        {/* If we check in the browsers Dev tools console, we see the log message with a tag that says server this indicates that "Greet component" code was not executed in the browser but on the server. 
+        This can be confirmed by looking at our terminal in VS Code where we see the log message "Greet component" from line two.
+        So our Greet component which is a "Server Component" by default runs exclusively on the server.*/}
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -21,7 +28,8 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
+            Hello World!
+            {/* Save and see your changes instantly. */}
           </li>
         </ol>
 
