@@ -94,4 +94,40 @@
 - By running server-side, they ensure sensitive information like API keys remain protected
 
 ## Data Fetching
-How effortlessly fetch data 
+- How effortlessly fetch data 
+- Server components are the preferred choice for data fetching in Next.js
+  - reduced bundle size 
+  - lower latency
+  - improved SEO
+  - direct access to backend resources
+  - and ability to secure sensitive data
+
+- Opt for client components for data fetching only when it's absolutely necessary, such as when you need real-time updates or when the data depends on client-side interactions that can't be predicted server-side.
+
+## Server Actions
+- Updating data, how can we handle form submissions or modify our database.
+- Server Actions are asynchronous functions that are executed on the server
+- They allow us to define and execute server-side logic directly from our components
+- They're incredibly useful for handling form submissions, updating databases, or any operation that requires server-side execution.
+
+## Authentication with Clerk
+1. Sign up
+2. Sign in
+3. Manage account
+4. Show UI elements based on auth status
+5. Protect routes based on auth status
+6. Read session and user data
+7. Sign out
+
+## Topics that are covered:
+    - Introduction to Next.js 15
+    - Development environment
+    - Project structure 
+    - Server and Client Components
+    - App Router
+    - Layouts
+    - Navigation
+    - Route Handlers
+    - Data fetching strategies
+    - Server Actions
+    - Authentication

@@ -1,6 +1,6 @@
 export const users = [
-  { id: 1, name: "John Doe" },
-  { id: 2, name: "Jane Doe" },
+  { id: 1, name: "Fuji Kaze" },
+  { id: 2, name: "Kenshi Yonezu" },
 ];
 
 export async function GET() {
